@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+    
+</head>
+<body>
+    {% block body %}
+    <style>
+        /* https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?size=626&ext=jpg */
+        body {
+          background-image: url('https://wallpaperaccess.com/full/487823.jpg');
+           text-align: center;
+           font-size: larger;
+           padding: 5rem;
+            margin-top: 4rem;
+        }
+        
+        </style>
+    <!-- <button class="btn-warning" type="submit">index</button> -->
+    <h2>Welcome to AXIS SHOPPING</h2>
+    <hr/>
+    <button class="btn btn-light" type="submit"><a href="{% url 'login' %}">Let's Start</a></button>&emsp13;&emsp13;
+    <button class="btn btn-light" type="submit"><a href="{% url 'about' %}">About</a></button>
+    {% endblock %}
+    
+</body>
+</html>
